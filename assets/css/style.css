@@ -1,0 +1,36 @@
+@import "./home.css";
+
+:root {
+    --white:#fff;
+    --green: #18bb9c;
+    --dark-gray: #2d3e50;
+    --dark: #3e3d3d;
+    --light-gray: #c4c4c4;
+    --power-gray:#1b252f;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* VISTA TABLET */
+@media screen and (min-width:769px) {
+    
+}
+
+/* VISTA DESKTOP */
+@media screen and (min-width:1024px) {
+    
+}
