@@ -1,0 +1,13 @@
+#nav-bar{
+    right: -100%;
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+#menu:checked ~ #nav-bar{
+    display: block; 
+}
+
