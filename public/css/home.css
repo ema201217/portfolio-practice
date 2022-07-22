@@ -337,5 +337,18 @@ main.home  .section-contact form .group-item input{
 }
 
 @media (min-width:1024px) {
-    
+    main.home .section-portfolio .section-images figure {
+        width: 32%;
+    }
+
+    main.home .section-about .paragraph-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        max-width: 70%;
+        text-align: left;
+    }
+   
+
+
 }

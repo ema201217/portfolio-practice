@@ -167,4 +167,11 @@ footer section.section-copyright {
         flex-direction: row;
         gap: 20px;
     }
+
+    /* Footer */
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 0;
+    }
 }
