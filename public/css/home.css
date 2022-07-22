@@ -160,7 +160,18 @@ main.home  .section-about .paragraph-container {
     text-align: left;
 }
 
-/* .home  .section-about .paragraph-container p {} */
+
+/* PSEUDOELEMENTO FIRST-LETTER */
+/* .home  .section-about .paragraph-container p::first-letter {
+    font-size: 3rem;
+    color: red;
+}  */
+
+/* PSEUDOELEMENTO FIRST-LINE */
+/* .home  .section-about .paragraph-container p::first-line {
+    font-size: 2rem;
+    color:var(--dark-gray);
+}  */
 
 main.home  .section-about .btn-download {
     align-items: center;
@@ -274,6 +285,29 @@ main.home  .section-contact form .group-item input {
     outline: none;
     padding: 10px 5px;
 }
+/* PSEUDOCLASE DISABLE --> EN INPUTS*/
+/* main.home  .section-contact form .group-item input:disabled {
+   border:1px solid red
+} */
+
+/* PSEUDOELEMENTO PLACEHOLDER */
+/* main.home  .section-contact form .group-item input::placeholder {
+    color: var(--green);
+    letter-spacing: 2px;
+} */
+
+
+
+/* FOCUS */
+/* main.home  .section-contact form .group-item input:focus,
+main.home  .section-contact form .group-item textarea:focus {
+    background-color: var(--light-gray);
+    color: darkblue;
+    box-shadow: 4px 4px 10px red;
+    transition: all 3s;
+} */
+
+
 
 main.home  .section-contact form .group-item textarea {
     border: none;
@@ -293,12 +327,21 @@ main.home .section-contact form button.btn-send {
     border: none;
     color: #fff;
     padding: 12px;
+    cursor: pointer;
 }
+
+/* PSEUDOCLASE DISABLE --> EN BUTTON */
+/* main.home .section-contact form button.btn-send:disabled {
+    background-color: rgba(243, 132, 132, 0.639);
+    cursor: help;
+} */
+
 
 @media (min-width:768px) {
     /* Section portfolio */
     main.home  .section-portfolio {
         padding: 80px;
+        
     }
 
     main.home  .section-portfolio .section-images {
@@ -333,7 +376,6 @@ main.home  .section-contact form .group-item input{
 
    main.home  .section-contact form .group-item textarea{
     }  
-
 }
 
 @media (min-width:1024px) {

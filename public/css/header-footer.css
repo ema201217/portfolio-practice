@@ -44,14 +44,86 @@ header.header-main nav.nav-bar ul {
 
 header.header-main nav.nav-bar li a{
     color: inherit;
+/*     border-bottom: 1px solid gray; */
 }
+
+header.header-main nav.nav-bar li a:hover{
+    color: var(--green);
+  /*   background-color: black; */
+   /*  text-shadow: 2px 2px 2px white; */
+   /*  border-color: darkcyan;
+    border-width: 4px; */
+    transition: all 2s;
+}
+
+header.header-main nav.nav-bar li a{
+   position: relative;
+}
+
+/* PSEUDOCLASE ACTIVE --> Solo para etiquetas "A" */
+/* header.header-main nav.nav-bar li a:active{
+   color: red;
+   transition: none;
+} */
+
+/* Trabajando con before */
+header.header-main nav.nav-bar li a.active::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: calc(100% + 5px);
+    height: 3px;
+    background-color: var(--green);
+}
+
+header.header-main nav.nav-bar li a.active{
+    color: var(--green);
+}
+
+header.header-main nav.nav-bar li a::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--green);
+}
+
+
+
+header.header-main nav.nav-bar li a:hover::before{
+    width: 100%;
+    transition: width 1s;
+}
+
+
+/* Trabando con After */
+
+header.header-main nav.nav-bar li a::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -10px;
+    width: 3px;
+    height: 0%;
+    background-color: var(--green);
+}
+
+header.header-main nav.nav-bar li a:hover::after{
+    height:100%;
+    transition: height 1s;
+}
+
+
 
 header.header-main nav.nav-bar li a.btn-register{
     color: var(--green);
 }
 
 header.header-main nav.nav-bar li a.btn-login{
-    color: red;
+    color:var(--green);
 }
 
 
