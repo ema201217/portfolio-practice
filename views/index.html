@@ -8,23 +8,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
-<body class="home">
-    <header>
+<body>
+    <header class="header-main">
         <h2>FREELANCE PORTFOLIO</h2>
         <label for="menu" class="btn-burger">
             <span>Menu</span> 
             <i class="fa-solid fa-bars-staggered"></i>
         </label>
-        <input type="checkbox" id="menu">
+        <input type="checkbox" id="menu" hidden>
         <nav id="nav-bar" class="nav-bar">
             <ul>
                 <li><a href="">PORTFOLIO</a></li>
                 <li><a href="">ABOUT</a></li>
                 <li><a href="">CONTACT</a></li>
+                <li><a href="" class="btn-register">Registrar</a></li>
+                <li><a href="" class="btn-login">Login</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="home">
         <section class="section-intro">
             <figure>
                 <img src="images/logo-user.jpeg" alt="logo-user">
@@ -69,6 +71,7 @@
                 </figure>
             </section>
         </section>
+        
         <section class="section-about">
             <h2>ABOUT</h2>
             <div class="star-lines-container">
@@ -85,7 +88,9 @@
                 <p>Download Now!</p>
             </div>
         </section>
-    <!--     <section class="section-contact">
+
+        <section class="section-contact">
+
             <h2>CONTACT ME</h2>
             <div class="star-lines-container">
                 <span class="line"></span>
@@ -93,31 +98,34 @@
                 <span class="line"></span>
             </div>
 
-            <form action="">
+            <form action="" method="post">
                 <div class="group-item">
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name"  id="name">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" autocomplete="off">
                 </div>
                 <div class="group-item">
                     <label for="email">Email Address</label>
-                    <input type="email" name="email"  id="email">
+                    <input type="text" name="email" id="email" >
                 </div>
                 <div class="group-item">
-                    <label for="phone">Phone Number</label>
-                    <input type="text" name="phone"  id="phone">
+                    <label for="tel">Phone Number</label>
+                    <input type="text" name="tel" id="tel" >
                 </div>
                 <div class="group-item">
-                    <label for="msg">Message</label>
-                    <textarea type="text" name="msg"  id="msg"></textarea>
+                    <label for="tel">Message</label>
+                    <textarea type="text" name="tel" id="tel" maxlength="10"></textarea>
                 </div>
 
-                <button type="button" class="btn-send">
-                    Submit
-                </button>
+                <div class="group-item">
+                    <button type="button" class="btn-send">
+                        Send
+                    </button>
+                </div>
+
+
             </form>
-        </section> -->
 
-        
+        </section>
 
     </main>
     <footer>

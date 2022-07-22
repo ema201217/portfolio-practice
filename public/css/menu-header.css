@@ -1,5 +1,4 @@
 #nav-bar{
-    right: -100%;
     display: none;
 }
 
@@ -10,4 +9,3 @@
 #menu:checked ~ #nav-bar{
     display: block; 
 }
-

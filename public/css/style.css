@@ -1,5 +1,6 @@
 @import "./home.css";
 @import "./menu-header.css";
+@import "./header-footer.css";
 
 :root {
     --white:#fff;
