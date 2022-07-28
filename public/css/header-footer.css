@@ -3,7 +3,7 @@ header.header-main {
     position: sticky;
     top: 0;
     z-index: 100;
-    align-items:flex-start;
+    align-items: flex-start;
     background-color: rgba(45, 62, 80, .9);
     color: #fff;
     display: flex;
@@ -44,22 +44,22 @@ header.header-main nav.nav-bar ul {
 /* header.header-main nav.nav-bar ul li{
 } */
 
-header.header-main nav.nav-bar li a{
+header.header-main nav.nav-bar li a {
     color: inherit;
-/*     border-bottom: 1px solid gray; */
+    /*     border-bottom: 1px solid gray; */
 }
 
-header.header-main nav.nav-bar li a:hover{
+header.header-main nav.nav-bar li a:hover {
     color: var(--green);
-  /*   background-color: black; */
-   /*  text-shadow: 2px 2px 2px white; */
-   /*  border-color: darkcyan;
+    /*   background-color: black; */
+    /*  text-shadow: 2px 2px 2px white; */
+    /*  border-color: darkcyan;
     border-width: 4px; */
     transition: all 2s;
 }
 
-header.header-main nav.nav-bar li a{
-   position: relative;
+header.header-main nav.nav-bar li a {
+    position: relative;
 }
 
 /* PSEUDOCLASE ACTIVE --> Solo para etiquetas "A" */
@@ -69,7 +69,7 @@ header.header-main nav.nav-bar li a{
 } */
 
 /* Trabajando con before */
-header.header-main nav.nav-bar li a.active::before{
+header.header-main nav.nav-bar li a.active::before {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -79,11 +79,11 @@ header.header-main nav.nav-bar li a.active::before{
     background-color: var(--green);
 }
 
-header.header-main nav.nav-bar li a.active{
+header.header-main nav.nav-bar li a.active {
     color: var(--green);
 }
 
-header.header-main nav.nav-bar li a::before{
+header.header-main nav.nav-bar li a::before {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -95,7 +95,7 @@ header.header-main nav.nav-bar li a::before{
 
 
 
-header.header-main nav.nav-bar li a:hover::before{
+header.header-main nav.nav-bar li a:hover::before {
     width: 100%;
     transition: width 1s;
 }
@@ -103,7 +103,7 @@ header.header-main nav.nav-bar li a:hover::before{
 
 /* Trabando con After */
 
-header.header-main nav.nav-bar li a::after{
+header.header-main nav.nav-bar li a::after {
     content: "";
     position: absolute;
     top: 5px;
@@ -113,19 +113,19 @@ header.header-main nav.nav-bar li a::after{
     background-color: var(--green);
 }
 
-header.header-main nav.nav-bar li a:hover::after{
-    height:100%;
+header.header-main nav.nav-bar li a:hover::after {
+    height: 100%;
     transition: height 1s;
 }
 
 
 
-header.header-main nav.nav-bar li a.btn-register{
+header.header-main nav.nav-bar li a.btn-register {
     color: var(--green);
 }
 
-header.header-main nav.nav-bar li a.btn-login{
-    color:var(--green);
+header.header-main nav.nav-bar li a.btn-login {
+    color: var(--green);
 }
 
 
@@ -140,6 +140,7 @@ footer {
     gap: 30px;
     padding: 80px 0 0 0;
     text-align: center;
+    justify-content: center;
 }
 
 footer .section-location {
@@ -152,7 +153,6 @@ footer .section-about {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 120px;
 }
 
 footer .section-location h2,
@@ -183,7 +183,7 @@ footer .section-around .social-container i {
 
 footer .section-about {
     width: 300px;
-} 
+}
 
 footer .section-about p span {
     color: var(--green);
@@ -199,12 +199,10 @@ footer .section-copyright {
     padding: 20px;
     text-align: center;
 }
-/* footer section.section-copyright small{
-} */
 
 @media (min-width:768px) {
     header.header-main {
-        align-items:center;
+        align-items: center;
         flex-direction: row;
         justify-content: space-between;
         padding: 20px 30px;
@@ -212,21 +210,23 @@ footer .section-copyright {
     }
 
     header.header-main .btn-burger {
-        width:100px;
+        width: 100px;
     }
+
     header.header-main h2 {
         width: 80%;
     }
-   
+
 }
 
 @media (min-width:1024px) {
     header.header-main {
         justify-content: space-around;
     }
-    header.header-main h2{
+
+    header.header-main h2 {
         width: fit-content;
-    } 
+    }
 
     header.header-main label.btn-burger {
         display: none;
@@ -235,6 +235,7 @@ footer .section-copyright {
     header.header-main nav#nav-bar {
         display: block;
     }
+
     header.header-main nav#nav-bar ul {
         display: flex;
         flex-direction: row;
@@ -244,5 +245,11 @@ footer .section-copyright {
     /* Footer */
     footer {
         justify-content: space-evenly;
+    }
+
+    footer .section-location,
+    footer .section-around,
+    footer .section-about {
+        height: 120px;
     }
 }
