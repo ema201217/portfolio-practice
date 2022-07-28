@@ -1,11 +1,12 @@
 @import "./home.css";
 @import "./menu-header.css";
 @import "./header-footer.css";
+@import "./reutilizables.css";
 
 :root {
     --white:#fff;
     --green: #18bb9c;
-    --dark-gray: #2d3e50;
+    --dark-gray: rgb(45, 62, 80);
     --dark: #3e3d3d;
     --light-gray: #c4c4c4;
     --power-gray:#1b252f;
@@ -15,6 +16,10 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 li {
